@@ -162,7 +162,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 6px; /* Aligns the dot perfectly with the first line of text */
+    top: 6px; 
     width: 8px;
     height: 8px;
     background-color: var(--theme-green); 
@@ -181,6 +181,7 @@
     background-size: cover;
     background-position: center;
     box-shadow: 0 15px 35px rgba(27, 72, 106, 0.15);
+
 }
 
 .sidebar-cta-overlay {
@@ -242,7 +243,7 @@
     .project-sidebar {
         position: -webkit-sticky !important;
         position: sticky !important;
-        top: 100px !important; /* Distance from top of screen / navbar */
+        top: 130px !important; /* Distance from top of screen / navbar */
         z-index: 100;
         
         /* Forces the sidebar to stay compact inside its tall parent column */
@@ -252,5 +253,146 @@
         padding-bottom: 30px;
         display: block !important;
         will-change: transform;
+    }
+}
+
+
+/* ========================================= */
+/* --- EQUIPMENT TABS & NESTED MENU --- */
+/* ========================================= */
+
+/* Main Outer Tabs (Horizontal Scrolling on Mobile) */
+.custom-portfolio-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 15px; 
+    gap: 10px;
+    border-bottom: none !important; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.custom-portfolio-tabs::-webkit-scrollbar { display: none; }
+
+.custom-portfolio-tabs .nav-link {
+    background-color: #f8f9fa; 
+    color: #6c757d;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 50px !important; 
+    border: none !important; 
+    outline: none !important;
+    text-decoration: none !important; /* THIS KILLS THE UNDERLINE */
+    transition: all 0.3s ease;
+}
+
+.custom-portfolio-tabs .nav-link:hover {
+    color: var(--navy-dark);
+    background-color: rgba(27, 72, 106, 0.1);
+}
+
+.custom-portfolio-tabs .nav-link.active {
+    background-color: var(--navy-dark) !important;
+    color: #ffffff !important;
+    border: none !important; /* Ensures no active border */
+    text-decoration: none !important; /* Ensures no active underline */
+    box-shadow: 0 4px 15px rgba(27, 72, 106, 0.2);
+}
+
+/* Inner Vertical Menu (The 5 Chiller Types) */
+.custom-inner-tabs { gap: 5px; }
+.row {
+    --bs-gutter-x: 2rem;
+}
+.custom-inner-tabs .nav-link {
+    text-align: left;
+    color: var(--navy-dark);
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    border: none !important; /* Swapped to none to prevent underlines */
+    text-decoration: none !important; /* Kills underline here too */
+    transition: all 0.3s ease;
+}
+
+.custom-inner-tabs .nav-link:hover {
+    background-color: rgba(140, 198, 63, 0.1);
+    color: var(--theme-green);
+    transform: translateX(5px);
+}
+
+.custom-inner-tabs .nav-link.active {
+    background-color: var(--theme-green) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(140, 198, 63, 0.3);
+}
+
+/* 3-IMAGE GRID (For AHU, ACCU, etc.) */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* FORCES EXACTLY 3 IN A ROW */
+    gap: 25px;
+}
+
+.portfolio-item {
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Sub-Gallery Images (Inside Chiller) */
+.inner-gallery-img {
+    width: 100%;
+    height: 300px; /* Uniform height for the 3-in-a-row layout */
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.inner-gallery-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .custom-inner-tabs {
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 15px;
+        scrollbar-width: none;
+    }
+    .custom-inner-tabs::-webkit-scrollbar { display: none; }
+    .custom-inner-tabs .nav-link { margin-bottom: 0; }
+    
+    .border-start { border-left: none !important; }
+    .ps-lg-4 { padding-left: 0 !important; margin-top: 20px; }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 in a row on tablet */
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-portfolio-tabs {
+        margin-left: -15px; margin-right: -15px;
+        padding-left: 15px; padding-right: 15px;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 in a row on mobile */
     }
 }

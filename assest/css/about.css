@@ -1904,3 +1904,111 @@ html, body {
     margin-top: 0px;
     border-top: 4px solid var(--theme-green);
 } 
+
+
+/* ========================================= */
+/* --- HSE SECTION & 5-IMAGE BENTO GRID --- */
+/* ========================================= */
+
+/* Icon Box for the Checklist */
+.hse-icon-box {
+    width: 40px; height: 40px;
+    background-color: rgba(140, 198, 63, 0.15); /* Light Theme Green */
+    color: var(--theme-green);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; transition: all 0.3s ease;
+}
+
+.hse-list li:hover .hse-icon-box {
+    background-color: var(--theme-green); color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* The 5-Image Grid System */
+.hse-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 220px); /* Adjust height to make images taller/shorter */
+    gap: 15px;
+    position: relative;
+}
+
+.hse-bento-item {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hse-bento-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hse-bento-item:hover img {
+    transform: scale(1.08); /* Premium zoom effect on hover */
+}
+
+/* Placing the 5 images in the grid */
+.hse-item-1 { grid-column: span 2; grid-row: span 1; } /* Top Left: Large */
+.hse-item-2 { grid-column: span 1; grid-row: span 1; } /* Top Right: Small */
+.hse-item-3 { grid-column: span 1; grid-row: span 1; } /* Bottom Left: Small */
+.hse-item-4 { grid-column: span 1; grid-row: span 1; } /* Bottom Middle: Small */
+.hse-item-5 { grid-column: span 1; grid-row: span 1; } /* Bottom Right: Small */
+
+/* The Floating Badge */
+.hse-floating-badge {
+    bottom: -20px;
+    right: -20px;
+    z-index: 5;
+    animation: hseFloat 4s ease-in-out infinite;
+}
+
+@keyframes hseFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+    /* Tablet View */
+    .hse-bento-grid { grid-template-rows: repeat(2, 160px); gap: 10px; }
+    .hse-floating-badge { right: 10px; bottom: 10px; animation: none; }
+}
+
+@media (max-width: 575px) {
+    /* Mobile View */
+    .hse-bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 140px 140px; /* 3 rows on mobile */
+    }
+    .hse-item-1 { grid-column: span 2; } /* Top image spans full width */
+    .hse-item-2, .hse-item-3, .hse-item-4, .hse-item-5 { grid-column: span 1; }
+    
+    /* Center the badge below the grid on mobile */
+    .hse-floating-badge { 
+        position: relative; 
+        margin-top: 20px; bottom: 0; right: 0; 
+        justify-self: center; grid-column: span 2; 
+        width: max-content;
+    }
+}
+
+/* Makes sure the video cover acts exactly like an image */
+.about-cover-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures it fills the box without stretching weirdly */
+    position: absolute; /* Keeps it perfectly contained behind the play button */
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Ensure the play button stays on top of the video */
+.about-play-btn {
+    z-index: 2;
+    position: relative;
+}

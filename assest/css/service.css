@@ -798,3 +798,173 @@
         height: 90px;
     }
 }
+
+
+/* ========================================= */
+/* --- CUSTOM ELECTRICAL IMAGE SLIDER --- */
+/* ========================================= */
+.electrical-slider-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 35px; /* Creates breathing room for the arrows */
+}
+
+.electrical-image-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /* Hide standard scrollbars */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.electrical-image-slider::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Forces exactly 4 items per row on desktop */
+.slider-item {
+    flex: 0 0 calc((100% - 60px) / 4); 
+    scroll-snap-align: start;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 280px; /* Fixed height so all images look uniform */
+    object-fit: cover;
+    border: 2px solid rgba(27, 72, 106, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.slider-item img:hover {
+    transform: translateY(-5px); /* Nice hover lift effect */
+}
+
+/* Arrow Buttons */
+.custom-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--navy-dark);
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.custom-slider-btn:hover {
+    background-color: var(--theme-green);
+    color: var(--navy-dark);
+}
+
+.prev-btn { left: -10px; }
+.next-btn { right: -10px; }
+
+/* Responsive adjustments for Tablets and Mobile */
+@media (max-width: 991px) {
+    .slider-item { flex: 0 0 calc((100% - 20px) / 2); } /* 2 per row on tablets */
+}
+@media (max-width: 575px) {
+    .slider-item { flex: 0 0 100%; } /* 1 per row on phones */
+    .electrical-slider-wrapper { padding: 0 25px; }
+}
+
+/* ========================================= */
+/* --- HSE SECTION & 5-IMAGE BENTO GRID --- */
+/* ========================================= */
+
+/* Icon Box for the Checklist */
+.hse-icon-box {
+    width: 40px; height: 40px;
+    background-color: rgba(140, 198, 63, 0.15); /* Light Theme Green */
+    color: var(--theme-green);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; transition: all 0.3s ease;
+}
+
+.hse-list li:hover .hse-icon-box {
+    background-color: var(--theme-green); color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* The 5-Image Grid System */
+.hse-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 220px); /* Adjust height to make images taller/shorter */
+    gap: 15px;
+    position: relative;
+}
+
+.hse-bento-item {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hse-bento-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hse-bento-item:hover img {
+    transform: scale(1.08); /* Premium zoom effect on hover */
+}
+
+/* Placing the 5 images in the grid */
+.hse-item-1 { grid-column: span 2; grid-row: span 1; } /* Top Left: Large */
+.hse-item-2 { grid-column: span 1; grid-row: span 1; } /* Top Right: Small */
+.hse-item-3 { grid-column: span 1; grid-row: span 1; } /* Bottom Left: Small */
+.hse-item-4 { grid-column: span 1; grid-row: span 1; } /* Bottom Middle: Small */
+.hse-item-5 { grid-column: span 1; grid-row: span 1; } /* Bottom Right: Small */
+
+/* The Floating Badge */
+.hse-floating-badge {
+    bottom: -80px;
+    right: -20px;
+    z-index: 5;
+    animation: hseFloat 4s ease-in-out infinite;
+}
+
+@keyframes hseFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+    /* Tablet View */
+    .hse-bento-grid { grid-template-rows: repeat(2, 160px); gap: 10px; }
+    .hse-floating-badge { right: 10px; bottom: 10px; animation: none; }
+}
+
+@media (max-width: 575px) {
+    /* Mobile View */
+    .hse-bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 140px 140px; /* 3 rows on mobile */
+    }
+    .hse-item-1 { grid-column: span 2; } /* Top image spans full width */
+    .hse-item-2, .hse-item-3, .hse-item-4, .hse-item-5 { grid-column: span 1; }
+    
+    /* Center the badge below the grid on mobile */
+    .hse-floating-badge { 
+        position: relative; 
+        margin-top: 20px; bottom: 0; right: 0; 
+        justify-self: center; grid-column: span 2; 
+        width: max-content;
+    }
+}
