@@ -237,216 +237,191 @@
         <div class="row mb-5 justify-content-center text-center">
             <div class="col-lg-8 css-fade-up">
                 <div class="badge-modern mb-3 d-inline-block px-3 py-1 rounded-pill" style="background-color: rgba(27, 72, 106, 0.1); color: var(--navy-dark); font-weight: 600; font-size: 0.85rem;">
-                    Equipment Profile
+                    Smart Automation
                 </div>
                 <h2 class="display-6 fw-bold mb-3" style="color: var(--navy-dark);">
                     Comprehensive <span style="color: var(--theme-green);">Our Work Portfolio</span>
                 </h2>
-                <p class="text-muted fs-5">Explore our specialized infrastructure capabilities and equipment types.</p>
+                <p class="text-muted fs-5">Explore our specialized infrastructure capabilities and equipment types. Advanced PLC/SCADA/BMS technologies to monitor, control, and optimize HVAC operations, ensuring energy efficiency.</p>
             </div>
         </div>
 
-        <div class="row css-fade-up delay-2">
-            <div class="col-12">
-                <ul class="nav nav-pills custom-portfolio-tabs justify-content-lg-center mb-5" id="equipmentTabs" role="tablist">
+      <div class="row css-fade-up delay-2">
+          
+        <div class="col-lg-3 col-xl-2 mb-4 mb-lg-0">
+            <div class="sticky-sidebar">
+                <ul class="nav flex-column nav-pills custom-portfolio-tabs" id="equipmentTabs" role="tablist" aria-orientation="vertical">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="chiller-tab" data-bs-toggle="pill" data-bs-target="#tab-chiller" type="button" role="tab">Chiller</button>
-                    </li>
-                    <!-- <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="ahu-tab" data-bs-toggle="pill" data-bs-target="#tab-ahu" type="button" role="tab">AHU</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="accu-tab" data-bs-toggle="pill" data-bs-target="#tab-accu" type="button" role="tab">ACCU</button>
-                    </li> -->
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="controls-tab" data-bs-toggle="pill" data-bs-target="#tab-controls" type="button" role="tab">Controls</button>
+                        <button class="nav-link active w-100 text-start" id="chiller-tab" data-bs-toggle="pill" data-bs-target="#tab-chiller" type="button" role="tab">Chiller</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="piping-tab" data-bs-toggle="pill" data-bs-target="#tab-piping" type="button" role="tab">Piping</button>
+                        <button class="nav-link w-100 text-start" id="controls-tab" data-bs-toggle="pill" data-bs-target="#tab-controls" type="button" role="tab">Controls</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="duct-tab" data-bs-toggle="pill" data-bs-target="#tab-duct" type="button" role="tab">Duct Works</button>
+                        <button class="nav-link w-100 text-start" id="piping-tab" data-bs-toggle="pill" data-bs-target="#tab-piping" type="button" role="tab">Piping</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="ventilation-tab" data-bs-toggle="pill" data-bs-target="#tab-ventilation" type="button" role="tab">Ventilation</button>
+                        <button class="nav-link w-100 text-start" id="duct-tab" data-bs-toggle="pill" data-bs-target="#tab-duct" type="button" role="tab">Duct Works</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="testing-tab" data-bs-toggle="pill" data-bs-target="#tab-testing" type="button" role="tab">Testing & Commissioning</button>
+                        <button class="nav-link w-100 text-start" id="ventilation-tab" data-bs-toggle="pill" data-bs-target="#tab-ventilation" type="button" role="tab">Ventilation</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link w-100 text-start" id="testing-tab" data-bs-toggle="pill" data-bs-target="#tab-testing" type="button" role="tab">Testing & Commissioning</button>
                     </li>
                 </ul>
-
-                <div class="tab-content bg-white p-4 p-md-5 rounded-4 shadow-sm border" id="equipmentTabsContent" style="border-color: rgba(27, 72, 106, 0.08) !important;">
-    
-<div class="tab-pane fade show active" id="tab-chiller" role="tabpanel">
-    <div class="row g-2">
-        <div class="col-lg-3">
-            <div class="nav flex-column nav-pills custom-inner-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="nav-link active" id="type1-tab" data-bs-toggle="pill" data-bs-target="#type1-img" type="button" role="tab">Water and Air Cooled Chiller</button>
-                <button class="nav-link" id="type2-tab" data-bs-toggle="pill" data-bs-target="#type2-img" type="button" role="tab">VRF and DX</button>
-                <button class="nav-link" id="type3-tab" data-bs-toggle="pill" data-bs-target="#type3-img" type="button" role="tab">RO System</button>
-                <button class="nav-link" id="type4-tab" data-bs-toggle="pill" data-bs-target="#type4-img" type="button" role="tab">Package Units</button>
-                <button class="nav-link" id="type5-tab" data-bs-toggle="pill" data-bs-target="#type5-img" type="button" role="tab">Cooling Towers</button>
             </div>
         </div>
-        <div class="col-lg-9 border-start ps-lg-4">
-            <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="type1-img" role="tabpanel">
-                    <div class="row g-3">
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chillers1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller2.jpg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller4.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller5.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller6.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
-                    
+
+        <div class="col-lg-9 col-xl-10">
+            <div class="tab-content bg-white p-4 p-md-5 rounded-4 shadow-sm border" id="equipmentTabsContent" style="border-color: rgba(27, 72, 106, 0.08) !important;">
+                
+                <div class="tab-pane fade show active" id="tab-chiller" role="tabpanel">
+                    <div class="row g-2">
+                        <div class="col-lg-3 col-xl-3">
+                            <div class="nav flex-column nav-pills custom-inner-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="type1-tab" data-bs-toggle="pill" data-bs-target="#type1-img" type="button" role="tab">Water and Air Cooled Chiller</button>
+                                <button class="nav-link" id="type2-tab" data-bs-toggle="pill" data-bs-target="#type2-img" type="button" role="tab">VRF and DX</button>
+                                <button class="nav-link" id="type3-tab" data-bs-toggle="pill" data-bs-target="#type3-img" type="button" role="tab">RO System</button>
+                                <button class="nav-link" id="type4-tab" data-bs-toggle="pill" data-bs-target="#type4-img" type="button" role="tab">Package Units</button>
+                                <button class="nav-link" id="type5-tab" data-bs-toggle="pill" data-bs-target="#type5-img" type="button" role="tab">Cooling Towers</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-xl-9 border-start ps-lg-4">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="type1-img" role="tabpanel">
+                                    <div class="row g-3">
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chillers1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller2.jpg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller4.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller5.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Water Coold and Air Cooled Chiller/Air Cooled Chiller6.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Air Cooled"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="type2-img" role="tabpanel">
+                                    <div class="row g-3">
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/AHU & ACCU.JPG" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf2.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf4.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf5.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf6.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf7.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf8.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="type3-img" role="tabpanel">
+                                    <div class="row g-3">
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/RO System/rosystem1.jpg" class="inner-gallery-img rounded-4 shadow-sm" alt="Centrifugal"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/RO System/rosystem2.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Centrifugal"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/RO System/rosystem3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Centrifugal"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="type4-img" role="tabpanel">
+                                    <div class="row g-3">
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Package units/package1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Screw"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Package units/package2.JPG" class="inner-gallery-img rounded-4 shadow-sm" alt="Screw"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Package units/package3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Screw"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="type5-img" role="tabpanel">
+                                    <div class="row g-3">
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower2.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/coolingtower3.jpg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower4.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
+                                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower5.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="type2-img" role="tabpanel">
-                    <div class="row g-3">
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/AHU & ACCU.JPG" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf2.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf4.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf5.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf6.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf7.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/VRF and DX type/vrf8.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Water Cooled"></div>
+
+                <div class="tab-pane fade" id="tab-controls" role="tabpanel">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control1.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control2.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control3.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control4.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control5.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control6.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control7.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control8.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control9.jpeg" alt="Controls"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control10.jpeg" alt="Controls"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="type3-img" role="tabpanel">
-                    <div class="row g-3">
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/RO System/rosystem1.jpg" class="inner-gallery-img rounded-4 shadow-sm" alt="Centrifugal"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/RO System/rosystem2.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Centrifugal"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/RO System/rosystem3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Centrifugal"></div>
+
+                <div class="tab-pane fade" id="tab-piping" role="tabpanel">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/PHE Installationpiping.jpg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping1.jpg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping2.JPG" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping3.jpg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping4.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping5.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping6.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping7.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping8.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping9.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping10.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping11.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping12.jpeg" alt="Piping"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping13.jpeg" alt="Piping"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="type4-img" role="tabpanel">
-                    <div class="row g-3">
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Package units/package1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Screw"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Package units/package2.JPG" class="inner-gallery-img rounded-4 shadow-sm" alt="Screw"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Package units/package3.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Screw"></div>
+
+                <div class="tab-pane fade" id="tab-duct" role="tabpanel">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct and  Installation.jpg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct1.jpeg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct2.JPG" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct3.JPG" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct4.jpg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct5.jpeg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct6.jpeg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct7.jpeg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct8.jpeg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct9.jpeg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct10.jpeg" alt="Duct Works"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct11.jpeg" alt="Duct Works"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="type5-img" role="tabpanel">
-                    <div class="row g-3">
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower1.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower2.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/coolingtower3.jpg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower4.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
-                        <div class="col-lg-4 col-md-6"><img src="./assest/img/Cooling Tower/coolingtower5.jpeg" class="inner-gallery-img rounded-4 shadow-sm" alt="Scroll"></div>
+
+                <div class="tab-pane fade" id="tab-ventilation" role="tabpanel">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation1.JPG" alt="Ventilation"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation2.jpeg" alt="Ventilation"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation3.jpeg" alt="Ventilation"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation4.jpeg" alt="Ventilation"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation5.jpeg" alt="Ventilation"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation6.jpeg" alt="Ventilation"></div>
                     </div>
                 </div>
+
+                <div class="tab-pane fade" id="tab-testing" role="tabpanel">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/MS pipe Testing.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing1.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing2.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing3.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing4.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing5.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing6.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing7.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing8.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing9.jpeg" alt="Testing"></div>
+                        <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing10.jpeg" alt="Testing"></div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
-</div>
-<!-- 
-    <div class="tab-pane fade" id="tab-ahu" role="tabpanel">
-        <div class="portfolio-grid">
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control.jpeg" alt="AHU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control1.jpeg" alt="AHU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control2.jpeg" alt="AHU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/iControls/control3
-                .jpeg" alt="AHU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control4.jpeg" alt="AHU"></div>
-        </div>
-    </div>
-
-    <div class="tab-pane fade" id="tab-accu" role="tabpanel">
-        <div class="portfolio-grid">
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/climateimg20.jpeg" alt="ACCU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/climateimg10.jpeg" alt="ACCU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/climateimg5.jpeg" alt="ACCU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/stadiumworkingelectrica.jpeg" alt="ACCU"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/installingtechnicia.jpeg" alt="ACCU"></div>
-        </div>
-    </div> -->
-
-    <div class="tab-pane fade" id="tab-controls" role="tabpanel">
-        <div class="portfolio-grid">
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control1.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control2.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control3.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control4.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control5.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control6.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control7.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control8.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control9.jpeg" alt="Controls"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Controls/control10.jpeg" alt="Controls"></div>
-        </div>
-    </div>
-
-    <div class="tab-pane fade" id="tab-piping" role="tabpanel">
-        <div class="portfolio-grid">
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/PHE Installationpiping.jpg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping1.jpg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping2.JPG" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping3.jpg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping4.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping5.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping6.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping7.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping8.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping9.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping10.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping11.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping12.jpeg" alt="Piping"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Piping/piping13.jpeg" alt="Piping"></div>
-        </div>
-    </div>
-
-    <div class="tab-pane fade" id="tab-duct" role="tabpanel">
-        <div class="portfolio-grid">
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct and  Installation.jpg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct1.jpeg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct2.JPG" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct3.JPG" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct4.jpg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct5.jpeg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct6.jpeg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct7.jpeg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct8.jpeg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct9.jpeg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct10.jpeg" alt="Duct Works"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Duct Works/Duct11.jpeg" alt="Duct Works"></div>
-        </div>
-    </div>
-
-    <div class="tab-pane fade" id="tab-ventilation" role="tabpanel">
-        <div class="portfolio-grid">
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation1.JPG" alt="Ventilation"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation2.jpeg" alt="Ventilation"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation3.jpeg" alt="Ventilation"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation4.jpeg" alt="Ventilation"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation5.jpeg" alt="Ventilation"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Ventilation/ventilation6.jpeg" alt="Ventilation"></div>
-        </div>
-    </div>
-
-    <div class="tab-pane fade" id="tab-testing" role="tabpanel">
-        <div class="portfolio-grid">
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/MS pipe Testing.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing1.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing2.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing3.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing4.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing5.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing6.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing7.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing8.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing9.jpeg" alt="Testing"></div>
-            <div class="portfolio-item rounded-4 overflow-hidden shadow-sm"><img src="./assest/img/Testing & Commissioning/Testing10.jpeg" alt="Testing"></div>
-
-            
-        </div>
-    </div>
-
-</div>
-            </div>
-        </div>
     </div>
 </section>
 
