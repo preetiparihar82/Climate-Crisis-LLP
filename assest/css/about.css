@@ -1959,7 +1959,7 @@ html, body {
 
 /* The Floating Badge */
 .hse-floating-badge {
-    bottom: -20px;
+    bottom: -80px;
     right: -20px;
     z-index: 5;
     animation: hseFloat 4s ease-in-out infinite;
@@ -1990,7 +1990,7 @@ html, body {
     /* Center the badge below the grid on mobile */
     .hse-floating-badge { 
         position: relative; 
-        margin-top: 20px; bottom: 0; right: 0; 
+        margin-top: 20px; bottom: -60px; right: 0; 
         justify-self: center; grid-column: span 2; 
         width: max-content;
     }
