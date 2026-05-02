@@ -12,6 +12,12 @@ body {
     overflow-x: hidden;
 }
 
+.text-muted {
+    --bs-text-opacity: 1;
+    color: black !important;
+    font-weight: 400;
+}
+
 .py-5 {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
@@ -86,9 +92,9 @@ body {
 
 .hero-image-column {
     position: relative; 
-    z-index: 1; /* Required so the -1 vector below doesn't vanish entirely */
+    z-index: 1;
 }
-/* BACKGROUND VECTOR (Bottom Layer) */
+
 .decorative-vector-group {
     position: absolute;
     top: -5%;        
@@ -153,6 +159,7 @@ body {
 }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 .nav-link:hover, .nav-link.active { color: var(--theme-blue); }
+
 
 /* --- Custom Buttons --- */
 
@@ -231,35 +238,35 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    /* Fades out when the second image comes in */
+   
     animation: hideFirstImage 8s ease-in-out infinite; 
 }
 
 /* Image 2 (The Top Image) */
 .animated-hero-img {
     position: absolute;
-    bottom: 0; /* Aligns transparent cutouts to the bottom */
+    bottom: 0; 
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Prevents transparent images from stretching weirdly */
+    object-fit: contain; 
     opacity: 0;
-    /* Fades in when the first image leaves */
+   
     animation: showSecondImage 8s ease-in-out infinite;
 }
 
 /* Animation for Image 1 */
 @keyframes hideFirstImage {
-    0%, 35% { opacity: 1; }       /* Visible */
-    45%, 85% { opacity: 0; }      /* Hidden! (So he doesn't show behind guy 2) */
-    95%, 100% { opacity: 1; }     /* Visible again */
+    0%, 35% { opacity: 1; }       
+    45%, 85% { opacity: 0; }      
+    95%, 100% { opacity: 1; }     
 }
 
 /* Animation for Image 2 */
 @keyframes showSecondImage {
-    0%, 35% { opacity: 0; }       /* Hidden */
-    45%, 85% { opacity: 1; }      /* Visible! */
-    95%, 100% { opacity: 0; }     /* Hidden again */
+    0%, 35% { opacity: 0; }      
+    45%, 85% { opacity: 1; }      
+    95%, 100% { opacity: 0; }    
 }
 /* --- Cinematic Dissolve Animation --- */
 .css-dissolve {
@@ -293,14 +300,13 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    
-    /* Important for animations on inline elements like spans */
+   
     display: inline-block; 
     
-    /* Smooth flowing animation for the blend */
+
     animation: flowGradient 5s linear infinite;
     
-    /* Ensures the fade-in/out transitions still work smoothly */
+
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -310,14 +316,13 @@ body {
     100% { background-position: 200% center; }
 }
 
-/* Make sure your fade classes exist! */
 .fade-out {
     opacity: 0;
-    transform: translateY(-10px); /* Optional: slide up slightly */
+    transform: translateY(-10px);
 }
 .fade-in {
     opacity: 0;
-    transform: translateY(10px); /* Optional: prepare to slide in from bottom */
+    transform: translateY(10px); 
 }
 
 
@@ -343,7 +348,7 @@ body {
     background-size: cover;
     background-position: center;
 }
-/* --- Image & Flash Animation --- */
+
 /* ========================================= */
 /* --- HERO IMAGES & CROSSFADE ANIMATION --- */
 /* ========================================= */
@@ -352,7 +357,7 @@ body {
     position: relative;
     display: inline-block; 
     overflow: hidden; 
-    z-index: 5; /* Forces wrapper to the front */
+    z-index: 5; 
 }
 
 /* Image 1 (The Base Image) */
@@ -363,8 +368,8 @@ body {
     object-fit: contain; 
     display: block;
     position: relative;
-    z-index: 1; /* Keeps image behind the flash effect */
-    /* Fades out when the second image comes in */
+    z-index: 1; 
+
     animation: hideFirstImage 8s ease-in-out infinite; 
 }
 
@@ -378,7 +383,7 @@ body {
     object-fit: contain; 
     opacity: 0;
     z-index: 2;
-    /* Fades in when the first image leaves */
+    
     animation: showSecondImage 8s ease-in-out infinite;
 }
 
@@ -408,20 +413,18 @@ body {
     height: 100%;
     background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
     transform: skewX(-25deg);
-    z-index: 10; /* Ensures the flash sweeps over BOTH images */
+    z-index: 10;
     pointer-events: none; 
     
-    /* THE FIX: Runs the sweep animation continuously every 5 seconds */
     animation: continuousFlashSweep 4s ease-in-out infinite;
 }
 
 /* Controls the timing of the continuous sweep */
 @keyframes continuousFlashSweep {
-    /* Sweeps across rapidly during the first 15% of the 5 seconds */
+ 
     0% { left: -150%; }
     15% { left: 200%; }
     
-    /* Sits off-screen doing nothing for the remaining time, creating the pause */
     100% { left: 200%; }
 }
 
@@ -550,16 +553,16 @@ body {
     }
     
     .main-hero-img { 
-        max-height: 420px; /* Prevents giant images on iPads */
+        max-height: 420px;
         margin: 0 auto;
     }
     
-    /* 4. Contact Card Stacking (Fixes the overlapping issue) */
+    
     .contact-card-wrapper {
-        position: relative; /* Changes from absolute to relative */
+        position: relative; 
         bottom: auto;
         right: auto;
-        margin-top: -30px; /* Slight artistic overlap */
+        margin-top: -30px; 
         display: flex;
         justify-content: center;
         padding: 0 15px;
@@ -600,7 +603,7 @@ body {
     }
 
     /* 4. Contact Card Mobile Adjustments */
-    .contact-card-wrapper { margin-top: -15px; }
+    .contact-card-wrapper { margin-top: -15px;  left: 30px;margin-bottom: 150px !important;}
     .contact-card { 
         padding: 20px 15px; 
         border-width: 2px; 
@@ -608,33 +611,31 @@ body {
     }
     .contact-card h4 { font-size: 1.25rem; }
 
-    /* 5. Clean up clutter to prevent horizontal scrolling */
     .decorative-vector-group { display: none !important; } 
     
     /* 6. General Padding Reductions */
     .py-5 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
-    /* --- Add this inside your @media (max-width: 767px) --- */
+   
 
 /* 1. Prevent the WhatsApp number from breaking into two lines */
 .d-flex.align-items-center.gap-3 a.text-dark {
     white-space: nowrap;
-    font-size: 0.95rem; /* Slightly scale down font */
+    font-size: 0.95rem; 
 }
 
-/* 2. Adjust button padding and sizing for mobile */
 .btn-custom {
-    padding: 10px 16px !important; /* Reduce padding */
+    padding: 10px 16px !important; 
     font-size: 0.9rem; 
-    white-space: nowrap; /* Keep button text on one line */
+    white-space: nowrap; 
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-/* 3. Slightly reduce the gap between the items on small screens */
+
 .d-flex.align-items-center.gap-3.mt-3.mt-lg-0 {
     gap: 12px !important; 
-    justify-content: flex-start; /* Or 'space-between' if you want them pushed to the edges */
+    justify-content: flex-start;
 }
 }
 
@@ -652,7 +653,7 @@ body {
     
 
     .contact-card-wrapper {
-        margin-bottom: 30px !important; 
+        margin-bottom: 120px !important; 
     }
 }
 
@@ -787,11 +788,10 @@ body {
 /* --- Bouncy Wave Text Animation --- */
 .wave-word {
     display: inline-block;
-    opacity: 0; /* Start invisible */
-    transform: translateY(30px); /* Start pushed down */
+    opacity: 0; 
+    transform: translateY(30px); 
 }
 
-/* This class is added by Javascript when scrolling */
 .wave-container.play-wave .wave-word {
     animation: waveMotion 0.8s ease-out forwards;
 }
@@ -803,11 +803,11 @@ body {
     }
     50% { 
         opacity: 1; 
-        transform: translateY(-12px); /* The "Peak" of the wave popping up */
+        transform: translateY(-12px); 
     }
     100% { 
         opacity: 1; 
-        transform: translateY(0); /* Settles back to normal */
+        transform: translateY(0); 
     }
 }
 
@@ -939,6 +939,12 @@ body {
     overflow: hidden;
 }
 
+
+/* Hides the volume icon and slider on video players */
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button {
+    display: none !important;
+}
 /* --- Carousel Dots Indicator --- */
 .custom-carousel-dots {
     display: flex;
@@ -1042,7 +1048,12 @@ body {
 
     .decorative-vector-group { right: -5%; opacity: 0.3; transform: scale(0.7); }
 }
-
+@media (max-width: 767px) {
+    .contact-card-wrapper {
+        margin-top: -15px;
+        margin-bottom: 150px !important;
+    }
+}
 /* --- MOBILE PHONES & iPHONES (Max 767px) --- */
 @media (max-width: 767px) {
     .nav-logo { height: 50px !important; } 
@@ -1055,7 +1066,7 @@ body {
     .hero-section { padding-top: 20px; padding-bottom: 40px; }
     .main-hero-img { max-height: 320px; }
 
-    .contact-card-wrapper { margin-top: -15px; margin-bottom: 30px !important; }
+   
     .contact-card { padding: 20px 15px; border-width: 2px; border-radius: 15px; }
     .contact-card h4 { font-size: 1.25rem; }
 
