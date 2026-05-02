@@ -930,6 +930,7 @@
         </div>
     </div>
 </footer>
+
 <div class="modal fade" id="aboutVideoModal" tabindex="-1" aria-labelledby="aboutVideoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-transparent border-0">
@@ -939,11 +940,12 @@
             </div>
             
             <div class="modal-body p-0 rounded-4 overflow-hidden shadow-lg position-relative bg-dark">
-    <video id="aboutPromoVideo" width="100%" controls preload="metadata" style="display: block;">
-        <source src="./assest/img/video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+                <!-- ADDED 'muted' HERE -->
+                <video id="aboutPromoVideo" width="100%" controls preload="metadata" muted style="display: block;">
+                    <source src="./assest/img/video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
         </div>
     </div>
@@ -1296,6 +1298,24 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Target the Services dropdown link
+    let servicesDropdown = document.getElementById("servicesDropdown");
+    
+    if (servicesDropdown) {
+        servicesDropdown.addEventListener("click", function(e) {
+            // Check if the screen is desktop size (992px or larger)
+            if (window.innerWidth >= 992) {
+                // Force the browser to act like a normal link and redirect
+                window.location.href = this.href;
+            }
+            // If it's a mobile screen, the script does nothing, 
+            // allowing the standard tap-to-open menu to work!
+        });
+    }
+});
 </script>
 </body>
 
