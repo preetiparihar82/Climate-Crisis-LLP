@@ -18,7 +18,7 @@
 /* ========================================= */
 
 .privacy-policy-section {
-    background-color: #f8f9fa; /* Soft off-white background behind the card */
+    background-color: #f8f9fa; 
 }
 
 .document-card {
@@ -492,6 +492,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Target the Services dropdown link
+    let servicesDropdown = document.getElementById("servicesDropdown");
+    
+    if (servicesDropdown) {
+        servicesDropdown.addEventListener("click", function(e) {
+            // Check if the screen is desktop size (992px or larger)
+            if (window.innerWidth >= 992) {
+                // Force the browser to act like a normal link and redirect
+                window.location.href = this.href;
+            }
+            // If it's a mobile screen, the script does nothing, 
+            // allowing the standard tap-to-open menu to work!
+        });
+    }
+});
 </script>
 </body>
 
