@@ -47,236 +47,163 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-white sticky-top css-fade-in" id="mainNavbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="/assest/img/logoclimatecrisisfinal.png" alt="Climate Crisis LLP" class="nav-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top css-fade-in" id="mainNavbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="/assest/img/logoclimatecrisisfinal.png" alt="Climate Crisis LLP" class="nav-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul>
-                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-                    <a href="https://wa.me/919074347030" class="text-decoration-none text-dark fw-bold">
-                        <i class="fa-brands fa-whatsapp text-theme-green me-2" style="font-size: larger;"></i>+91 9074347030
-                    </a>
-                    <a href="quote.html" class="btn btn-custom btn-custom-green">
-    Get A Quote <i class="fa-solid fa-arrow-right ms-1"></i>
-</a>
-                </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+
+                
+                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                <a href="https://wa.me/919074347030" class="text-decoration-none text-dark fw-bold">
+                    <i class="fa-brands fa-whatsapp text-theme-green me-2" style="font-size: larger;"></i>+91 9074347030
+                </a>
+                <a href="quote.html" class="btn btn-custom btn-custom-green">
+                    Get A Quote <i class="fa-solid fa-arrow-right ms-1"></i>
+                </a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section class="hero-section py-4">
-        <div class="container">
-            <div class="hero-box px-4 px-lg-5 pt-5 pb-0 position-relative mb-4">
-                <div class="row align-items-center position-relative z-1">
+<section class="hero-section py-4">
+    <div class="container">
+        
+        <!-- THE WHOLE BIG BOX (Hero Box) -->
+        <div class="hero-box position-relative mb-4" style="border-radius: 30px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); background-color: #fbfbfb;">
+            
+            <!-- BACKGROUND VIDEO (Locked inside the Big Box) -->
+            <video id="heroBoxVideo" autoplay muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                <source src="./assest/img/videohero1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- YOUR EXACT SMART OVERLAY (Untouched) -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(254, 248, 248, 0.95) 0%, rgba(255, 255, 255, 0.481) 45%, rgba(255, 255, 255, 0.497) 100%); z-index: 1; opacity: 0.8;"></div>
+            
+            <!-- INNER CONTENT ROW -->
+            <div class="row align-items-center position-relative px-4 px-lg-5 pt-5 pb-lg-5 pb-4" style="z-index: 2;">
 
-                    <div class="col-lg-6 pb-5 pb-lg-5 text-center text-lg-start">
+                <!-- Left Column: Text -->
+                <div class="col-lg-6 pb-5 pb-lg-0 text-center text-lg-start">
 
-                        <div class="mb-3">
-                            <span class="text-uppercase fw-bold css-dissolve delay-1"
-                                style="color: var(--theme-green); letter-spacing: 2px; font-size: 0.85rem;">
-                                Built on your vision, Engineered by us
-                            </span>
-                        </div>
+                    <div class="mb-3">
+                        <span class="text-uppercase fw-bold css-dissolve delay-1"
+                            style="color: var(--theme-green); letter-spacing: 2px; font-size: 0.95rem;">
+                            Built on your vision, Engineered by us
+                        </span>
+                    </div>
 
-                        <h1 class="display-4 fw-bold mb-3 css-dissolve delay-2" style="color: var(--theme-blue);">
-                            <span id="dynamic-text" class="text-rotator">Your trusted partner</span> for
-                            <span style="color: var(--theme-blue);">all your operational needs</span>
-                        </h1>
-                        <p class="text-muted lead mb-4 pe-lg-4 css-fade-up delay-3">
-                            From mechanical contracting to interior design fit-outs, our experienced team provides
-                            tailored, sustainable solutions to power your business efficiently.
-                        </p>
+                    <h1 class="display-4 fw-bold mb-3 css-dissolve delay-2" style="color: var(--theme-blue);">
+                        <span id="dynamic-text" class="text-rotator">Your trusted partner</span> for
+                        <span style="color: var(--theme-blue);">all your operational needs</span>
+                    </h1>
+                    
+                    <p class="text-muted lead mb-4 pe-lg-4 css-fade-up delay-3">
+                        From mechanical contracting to interior design fit-outs, our experienced team provides
+                        tailored, sustainable solutions to power your business efficiently.
+                    </p>
 
-                        <div
-                            class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start gap-4 mb-4 css-fade-up delay-4">
-                            <a href="quote.html" class="btn btn-custom">
-    Request A Quote <i class="fa-solid fa-arrow-right ms-2"></i>
-</a>
-                            <div class="d-flex align-items-center gap-2">
-    <a href="#" class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
-        <i class="fa-solid fa-play"></i>
-    </a>
-    <span class="fw-bold text-dark">Watch Our Work</span>
-</div>
-                        </div>
-
-                        <div
-                            class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 css-fade-up delay-5">
-                            <span class="small text-muted fw-bold">Recommended By:</span>
-                            <div class="d-flex">
-                                <img src="https://i.pravatar.cc/40?img=11"
-                                    class="rounded-circle border border-2 border-white" width="35" alt="User">
-                                <img src="https://i.pravatar.cc/40?img=12"
-                                    class="rounded-circle border border-2 border-white ms-n2" width="35"
-                                    style="margin-left: -10px;" alt="User">
-                                <img src="https://i.pravatar.cc/40?img=13"
-                                    class="rounded-circle border border-2 border-white ms-n2" width="35"
-                                    style="margin-left: -10px;" alt="User">
-                            </div>
-                        </div>
-
-                        <div class="mt-4 pt-2 text-center text-lg-start css-fade-up delay-5">
-                            <div class="d-inline-flex align-items-center gap-3 px-4 py-2 rounded-pill"
-                                style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.8); box-shadow: 0 10px 25px rgba(0,0,0,0.04);">
-
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="svg-gear"
-                                        d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.73,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.43-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.49-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"
-                                        fill="var(--theme-blue)" />
-
-                                    <path class="svg-wrench"
-                                        d="M22.7,19l-9.1-9.1c0.9-2.3,0.4-5-1.5-6.9c-2-2-5-2.4-7.4-1.3L9,6L6,9L1.6,4.7C0.5,7.1,0.9,10.1,2.9,12.1 c1.9,1.9,4.6,2.4,6.9,1.5l9.1,9.1c0.4,0.4,1,0.4,1.4,0l2.3-2.3C23.1,20,23.1,19.4,22.7,19z"
-                                        fill="var(--theme-green)" stroke="#ffffff" stroke-width="0.8" />
-                                </svg>
-
-                                <div class="text-start">
-                                    <h6 class="mb-0 fw-bold" style="color: var(--navy-dark); font-size: 0.95rem;">Always
-                                        Operational</h6>
-                                    <span class="text-muted" style="font-size: 0.75rem;">Fully Equipped Team</span>
-                                </div>
-
-                            </div>
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start gap-4 mb-4 css-fade-up delay-4">
+                        <a href="quote.html" class="btn btn-custom">
+                            Request A Quote <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                        <div class="d-flex align-items-center gap-2">
+                            <a href="#" class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                            <span class="fw-bold text-dark">Watch Our Work</span>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 pt-4 pt-lg-0 text-center position-relative css-fade-left delay-4">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 css-fade-up delay-5">
+                        <span class="small text-muted fw-bold">Recommended By:</span>
+                        <div class="d-flex">
+                            <img src="https://i.pravatar.cc/40?img=11" class="rounded-circle border border-2 border-white" width="35" alt="User">
+                            <img src="https://i.pravatar.cc/40?img=12" class="rounded-circle border border-2 border-white ms-n2" width="35" style="margin-left: -10px;" alt="User">
+                            <img src="https://i.pravatar.cc/40?img=13" class="rounded-circle border border-2 border-white ms-n2" width="35" style="margin-left: -10px;" alt="User">
+                        </div>
+                    </div>
 
-                        <div class="decorative-vector-group"
-                            style="position: absolute; top: -6%; right: -2%; z-index: -1; pointer-events: none;">
-                            <svg width="450" height="450" viewBox="0 0 200 200" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
-
-                                <path d="M 20 120 L 50 120 L 70 90 L 120 90" fill="none" stroke="var(--theme-green)"
-                                    stroke-width="1" stroke-opacity="0.5" />
-                                <circle cx="20" cy="120" r="2.5" fill="#FBD350" fill-opacity="0.9" />
-                                <circle cx="120" cy="90" r="2" fill="var(--theme-green)" fill-opacity="0.6" />
-
-                                <path d="M 40 140 L 60 140 L 80 110 L 140 110" fill="none" stroke="var(--theme-blue)"
-                                    stroke-width="1" stroke-opacity="0.5" />
-                                <circle cx="40" cy="140" r="2.5" fill="#FBD350" fill-opacity="0.9" />
-                                <circle cx="140" cy="110" r="2" fill="var(--theme-blue)" fill-opacity="0.6" />
-
-                                <path d="M 120 40 Q 140 30 160 40 T 200 40" fill="none" stroke="var(--theme-green)"
-                                    stroke-width="1.5" stroke-opacity="0.4" />
-                                <path d="M 110 55 Q 130 45 150 55 T 190 55" fill="none" stroke="var(--theme-blue)"
-                                    stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 3" />
-                                <path d="M 130 70 Q 150 60 170 70 T 210 70" fill="none" stroke="var(--theme-green)"
-                                    stroke-width="1.5" stroke-opacity="0.4" />
-
-                                <circle cx="150" cy="55" r="35" fill="none" stroke="var(--theme-blue)"
-                                    stroke-width="0.5" stroke-opacity="0.2" stroke-dasharray="2 2" />
-                                <circle cx="150" cy="55" r="45" fill="none" stroke="var(--theme-green)"
-                                    stroke-width="0.5" stroke-opacity="0.15" />
-
-                                <path d="M 170 80 L 170 140 Q 170 150 160 150 L 90 150" fill="none"
-                                    stroke="var(--theme-blue)" stroke-width="8" stroke-opacity="0.1" />
-                                <path d="M 170 80 L 170 140 Q 170 150 160 150 L 90 150" fill="none"
-                                    stroke="var(--theme-blue)" stroke-width="1" stroke-opacity="0.3" />
-
-                                <line x1="162" y1="100" x2="178" y2="100" stroke="var(--theme-blue)" stroke-width="2.5"
-                                    stroke-opacity="0.4" />
-                                <line x1="162" y1="125" x2="178" y2="125" stroke="var(--theme-blue)" stroke-width="2.5"
-                                    stroke-opacity="0.4" />
-                                <line x1="115" y1="142" x2="115" y2="158" stroke="var(--theme-blue)" stroke-width="2.5"
-                                    stroke-opacity="0.4" />
-
-                                <circle cx="70" cy="165" r="22" fill="none" stroke="var(--theme-blue)" stroke-width="4"
-                                    stroke-dasharray="7 5" stroke-opacity="0.25" />
-                                <circle cx="70" cy="165" r="15" fill="none" stroke="var(--theme-green)"
-                                    stroke-width="1.5" stroke-opacity="0.4" />
-                                <circle cx="70" cy="165" r="5" fill="none" stroke="#FBD350" stroke-width="1.5"
-                                    stroke-opacity="0.8" />
-
-                                <circle r="2.2" fill="#FBD350">
-                                    <animateMotion dur="4s" repeatCount="indefinite"
-                                        path="M 20 120 L 50 120 L 70 90 L 120 90" />
-                                </circle>
-
-                                <circle r="2.2" fill="#FBD350">
-                                    <animateMotion dur="5.5s" repeatCount="indefinite"
-                                        path="M 40 140 L 60 140 L 80 110 L 140 110" />
-                                </circle>
-
-                                <circle r="2.5" fill="var(--theme-green)" fill-opacity="0.8">
-                                    <animateMotion dur="7s" repeatCount="indefinite"
-                                        path="M 170 80 L 170 140 Q 170 150 160 150 L 90 150" />
-                                </circle>
-
+                    <div class="mt-4 pt-2 text-center text-lg-start css-fade-up delay-5">
+                        <div class="d-inline-flex align-items-center gap-3 px-4 py-2 rounded-pill"
+                            style="background: rgba(255, 255, 255, 0.392); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.8); box-shadow: 0 10px 25px rgba(0,0,0,0.04);">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-gear" d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.73,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.43-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.49-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z" fill="var(--theme-blue)" />
+                                <path class="svg-wrench" d="M22.7,19l-9.1-9.1c0.9-2.3,0.4-5-1.5-6.9c-2-2-5-2.4-7.4-1.3L9,6L6,9L1.6,4.7C0.5,7.1,0.9,10.1,2.9,12.1 c1.9,1.9,4.6,2.4,6.9,1.5l9.1,9.1c0.4,0.4,1,0.4,1.4,0l2.3-2.3C23.1,20,23.1,19.4,22.7,19z" fill="var(--theme-green)" stroke="#ffffff" stroke-width="0.8" />
                             </svg>
-                        </div>
-
-                        <div class="hero-image-wrapper" style="position: relative; z-index: 5;">
-    
-    <img src="/assest/img/hero-img.png" alt="Expert 1" class="img-fluid main-hero-img">
-    
-    <img src="/assest/img/bgmalendfemale.png" alt="Expert 2" class="img-fluid animated-hero-img">
-
-</div>
-
-                        <div class="contact-card-wrapper css-fade-up delay-5"
-                            style="position: absolute; z-index: 10; bottom: -50px; right: 5%;">
-                            <div class="contact-card">
-                                <h4 class="fw-bold mb-3" style="color: var(--navy-dark);">Contact our expert!</h4>
-                               <a href="contact.html" class="btn btn-custom w-100 mt-2">
-    Book Now <i class="fa-solid fa-arrow-right ms-2"></i>
-</a>
+                            <div class="text-start">
+                                <h6 class="mb-0 fw-bold" style="color: var(--navy-dark); font-size: 0.95rem;">Always Operational</h6>
+                                <span class="text-muted" style="font-size: 0.75rem;">Fully Equipped Team</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+                <!-- Right Column: Green Overlapping Contact Card -->
+                <div class="col-lg-6 pt-4 pt-lg-0 text-center position-relative css-fade-left delay-4" style="min-height: 200px;">
+                    <div class="contact-card-wrapper css-fade-up delay-5" style="position: absolute; z-index: 10; bottom: -100px; right: 20px;">
+                        <div class="contact-card" style="background-color: #92C020; border: 4px solid white; border-radius: 16px; padding: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); width: 280px; text-align: center; ">
+                            <h4 class="fw-bold mb-3" style="color: var(--navy-dark);">Contact our expert!</h4>
+                            <a href="contact.html"  class="btn btn-custom" style="background-color: #0b49a7; color: white; border-radius: 8px;">
+                                Book Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="row bottom-contact-row css-fade-up delay-5 mt-3">
-
-                <div
-                    class="col-md-5 mb-4 mb-md-0 d-flex gap-4 align-items-center align-items-md-start justify-content-center justify-content-md-start">
-                    <div class="icon-box mt-1">
-                        <i class="fa-regular fa-comments fs-2 text-theme-green"></i>
-                    </div>
-                    <div class="text-center text-md-start">
-                        <h4 class="fw-bold mb-2">Contact Us</h4>
-                        <p class="mb-1 text-muted" style="font-size: 1.05rem;"><strong>Email:</strong>
-                            info@climatecrisis.in</p>
-                        <p class="mb-0 text-muted" style="font-size: 1.05rem;"><strong>Phone:</strong>+91 9074347030
-                        </p>
-                        <p class="mb-0 text-muted" style="font-size: 1.05rem;"><strong>Phone:</strong>+91 9902216187
-                        </p>
-                        <p class="mb-0 text-muted" style="font-size: 1.05rem;"><strong>Phone:</strong>+91 7899160127
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="col-md-5 d-flex gap-4 align-items-center align-items-md-start justify-content-center justify-content-md-start border-md-start px-md-4">
-                    <div class="icon-box mt-1">
-                        <i class="fa-solid fa-location-dot fs-2 text-theme-green"></i>
-                    </div>
-                    <div class="text-center text-md-start">
-                        <h4 class="fw-bold mb-2">Our Location</h4>
-                        <p class="mb-0 text-muted" style="font-size: 1.05rem; line-height: 1.6;"> <i class="fas fa-map-marker-alt me-2"></i>15/457/b,saidham Building,Parali, Edathara, Palakkad, Kerala <br>678611, India</p> <br>
-                        <p class="mb-0 text-muted" style="font-size: 1.05rem; line-height: 1.6;"> <i class="fas fa-map-marker-alt me-2"></i>No.631, 1st main road, MSR post, Mathikere, Bengaluru-560054</p> 
-
-                    </div>
-                </div>
-
+            <!-- ADDED: VIDEO NAVIGATION DOTS -->
+            <div class="video-dots-container" style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 10px;">
+                <button class="vid-dot active" data-index="0" style="width: 12px; height: 12px; border-radius: 50%; border: none; background-color: var(--theme-blue); cursor: pointer; transition: background-color 0.3s; padding: 0;"></button>
+                <button class="vid-dot" data-index="1" style="width: 12px; height: 12px; border-radius: 50%; border: none; background-color: rgba(0,0,0,0.25); cursor: pointer; transition: background-color 0.3s; padding: 0;"></button>
+                <button class="vid-dot" data-index="2" style="width: 12px; height: 12px; border-radius: 50%; border: none; background-color: rgba(0,0,0,0.25); cursor: pointer; transition: background-color 0.3s; padding: 0;"></button>
             </div>
 
         </div>
-    </section>
+
+        <!-- BOTTOM CONTACT DETAILS DIV (Undisturbed) -->
+        <div class="row bottom-contact-row css-fade-up delay-5 mt-5">
+            <div class="col-md-5 mb-4 mb-md-0 d-flex gap-4 align-items-center align-items-md-start justify-content-center justify-content-md-start">
+                <div class="icon-box mt-1">
+                    <i class="fa-regular fa-comments fs-2 text-theme-green"></i>
+                </div>
+                <div class="text-center text-md-start">
+                    <h4 class="fw-bold mb-2">Contact Us</h4>
+                    <p class="mb-1 text-muted" style="font-size: 1.05rem;"><strong>Email:</strong> info@climatecrisis.in</p>
+                    <p class="mb-0 text-muted" style="font-size: 1.05rem;"><strong>Phone:</strong>+91 9074347030</p>
+                    <p class="mb-0 text-muted" style="font-size: 1.05rem;"><strong>Phone:</strong>+91 9902216187</p>
+                    <p class="mb-0 text-muted" style="font-size: 1.05rem;"><strong>Phone:</strong>+91 7899160127</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 d-flex gap-4 align-items-center align-items-md-start justify-content-center justify-content-md-start border-md-start px-md-4">
+                <div class="icon-box mt-1">
+                    <i class="fa-solid fa-location-dot fs-2 text-theme-green"></i>
+                </div>
+                <div class="text-center text-md-start">
+                    <h4 class="fw-bold mb-2">Our Location</h4>
+                    <p class="mb-0 text-muted" style="font-size: 1.05rem; line-height: 1.6;"> <i class="fas fa-map-marker-alt me-2"></i>15/457/b,saidham Building,Parali, Edathara, Palakkad, Kerala <br>678611, India</p> <br>
+                    <p class="mb-0 text-muted" style="font-size: 1.05rem; line-height: 1.6;"> <i class="fas fa-map-marker-alt me-2"></i>No.631, 1st main road, MSR post, Mathikere, Bengaluru-560054</p> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <section class="about-section py-5 my-5">
         <div class="container custom-container-1400">
@@ -610,9 +537,9 @@
                             <div class="project-card">
                                 <span class="client-badge"><i class="fa-solid fa-handshake text-theme-green me-2"></i> PDO / Petrofac</span>
                                 <h3 class="project-title">Kauther Depletion Compression Project</h3>
-                                <div class="project-location">
+                                <!-- <div class="project-location">
                                     <i class="fa-solid fa-location-dot text-theme-blue"></i> Oman
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -621,9 +548,9 @@
                             <div class="project-card">
                                 <span class="client-badge"><i class="fa-solid fa-handshake text-theme-green me-2"></i> NAMA / L&T India</span>
                                 <h3 class="project-title">Ad Dakhiliyah Water Transmission Project</h3>
-                                <div class="project-location">
+                                <!-- <div class="project-location">
                                     <i class="fa-solid fa-location-dot text-theme-blue"></i> Oman
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -632,9 +559,9 @@
                             <div class="project-card">
                                 <span class="client-badge"><i class="fa-solid fa-handshake text-theme-green me-2"></i> OQ / TR</span>
                                 <h3 class="project-title">Duqm Refinery Project EPC-1</h3>
-                                <div class="project-location">
+                                <!-- <div class="project-location">
                                     <i class="fa-solid fa-location-dot text-theme-blue"></i> Oman
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -643,9 +570,9 @@
                             <div class="project-card">
                                 <span class="client-badge"><i class="fa-solid fa-handshake text-theme-green me-2"></i> GS Inima</span>
                                 <h3 class="project-title">RO Desalination Plant, BARKA V IWP</h3>
-                                <div class="project-location">
+                                <!-- <div class="project-location">
                                     <i class="fa-solid fa-location-dot text-theme-blue"></i> Oman
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -654,9 +581,9 @@
                             <div class="project-card">
                                 <span class="client-badge"><i class="fa-solid fa-handshake text-theme-green me-2"></i> Tabreed Oman</span>
                                 <h3 class="project-title">DCP Plants (District Cooling)</h3>
-                                <div class="project-location">
+                                <!-- <div class="project-location">
                                     <i class="fa-solid fa-location-dot text-theme-blue"></i> Multiple Locations, Oman
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -749,12 +676,12 @@
                     <div class="flip-card-wrapper">
                         <div class="flip-card-inner">
                             <div class="flip-card-front" style="background-image: url('./assest/img/plcautomation.webp');">
-                                <h4 class="flip-title-front">Automation BMS/PLC SCADA System</h4>
+                                <h4 class="flip-title-front">Smart Automation</h4>
                             </div>
                             <div class="flip-card-back">
                                 <h4 class="fw-bold mb-3">Smart Automation</h4>
                                 <p class="flip-desc-back">
-                                    Advanced BMS integrated with PLC/SCADA technologies to monitor, control, and optimize HVAC operations, ensuring energy efficiency.
+                                    Advanced BMS/PLC/SCADA technologies to monitor, control, and optimize HVAC operations, ensuring energy efficiency.
                                 </p>
                                 <a href="project.html" class="btn flip-btn rounded-pill fw-bold px-4">See Solutions <i class="fa-solid fa-arrow-right ms-2"></i></a>
                             </div>
@@ -1047,14 +974,28 @@
 
         </div>
 
-       <div class="trusted-logos-wrapper css-fade-up delay-4">
+    <div class="trusted-logos-wrapper css-fade-up delay-4">
     <p class="trusted-text" style="font-size:xx-large; text-align: center;">Our Quality Commitment</p>
     
-    <div class="logo-marquee-container" style="display: flex; justify-content: center; padding: 1.5rem 0;">
+    <div class="logo-marquee-container" style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; padding: 1.5rem 0;">
         
-        <div class="iso-certificate-badge" style="display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 25px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); backdrop-filter: blur(8px);">
+        <!-- Added flex sizing and max-width to the card to enforce a 2-column layout -->
+        <div class="iso-certificate-badge" style="flex: 1 1 40%; max-width: 500px; min-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 25px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); backdrop-filter: blur(8px);">
             
-            <img src="./assest/img/CLIMATECRISISLLP 9001.jpg" alt="ISO Certified" style="height: 550px; width: auto; object-fit: contain;">
+            <!-- Reduced height to 400px and added max-width: 100% -->
+            <img src="./assest/img/CLIMATECRISISLLP 9001.jpg" alt="ISO Certified" style="height: 400px; max-width: 100%; object-fit: contain;">
+            
+            <div style="text-align: center; line-height: 1.3;">
+                <strong style="display: block; font-size: 1.15rem; font-weight: 600;">ISO 9001:2015</strong>
+                <span style="font-size: 0.85rem; opacity: 0.7;">Certified Company</span>
+            </div>
+            
+        </div>
+
+        <div class="iso-certificate-badge" style="flex: 1 1 40%; max-width: 450px; min-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 25px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); backdrop-filter: blur(8px);">
+            
+            <!-- Reduced height to 400px and added max-width: 100% -->
+            <img src="./assest/img/Certification of Recognition_page.jpg" alt="ISO Certified" style="height: 400px; max-width: 100%; object-fit: contain;">
             
             <div style="text-align: center; line-height: 1.3;">
                 <strong style="display: block; font-size: 1.15rem; font-weight: 600;">ISO 9001:2015</strong>
@@ -1336,7 +1277,8 @@
             </div>
             
             <div class="modal-body p-0 rounded-4 overflow-hidden shadow-lg position-relative bg-dark">
-                <video id="promoVideo" width="100%" controls style="display: block;">
+                <!-- ADDED 'muted' HERE -->
+                <video id="promoVideo" width="100%" controls muted style="display: block;">
                     <source src="./assest/img/video1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1367,6 +1309,8 @@
         }
     });
 </script>
+
+
 </body>
 
 </html>
