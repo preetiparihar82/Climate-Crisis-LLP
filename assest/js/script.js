@@ -355,3 +355,54 @@ document.addEventListener("DOMContentLoaded", function() {
         
 
     });
+
+
+   document.addEventListener("DOMContentLoaded", function() {
+    const boxVideo = document.getElementById('heroBoxVideo');
+    const dots = document.querySelectorAll('.vid-dot');
+    
+    // Put your 3 exact video file names here
+    const videoList = [
+        './assest/img/videohero1.mp4',
+        './assest/img/videohero2.mp4', 
+        './assest/img/videohero3.mp4'  
+    ];
+    
+    let currentIdx = 0;
+
+    function loadVideo(index) {
+        currentIdx = index;
+        if(boxVideo) {
+            boxVideo.src = videoList[currentIdx];
+            boxVideo.play();
+        }
+        
+        // Update dot colors
+        dots.forEach((dot, idx) => {
+            if(idx === currentIdx) {
+                dot.style.backgroundColor = 'var(--theme-blue)'; // Active dot color
+            } else {
+                dot.style.backgroundColor = 'rgba(0,0,0,0.25)'; // Inactive dot color
+            }
+        });
+    }
+
+    // 1. AUTOMATIC: When a video ends, go to the next one
+    if(boxVideo) {
+        boxVideo.addEventListener('ended', function() {
+            let nextIdx = currentIdx + 1;
+            if (nextIdx >= videoList.length) {
+                nextIdx = 0; 
+            }
+            loadVideo(nextIdx);
+        });
+    }
+
+    // 2. MANUAL: When a user clicks a dot, load that specific video
+    dots.forEach(dot => {
+        dot.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            loadVideo(index);
+        });
+    });
+});
