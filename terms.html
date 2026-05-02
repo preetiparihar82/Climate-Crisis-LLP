@@ -313,7 +313,29 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="project.html">Our Projects</a></li>
                         <li><a href="index.html#testi-section">Testimonials</a></li>
-                        <li><a href="service.html">Services</a></li>
+                         <li class="nav-item dropdown">
+   
+    <a class="nav-link dropdown-toggle d-flex align-items-center" href="service.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Services <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.7em;"></i>
+    </a>
+    <ul class="dropdown-menu shadow border-0" aria-labelledby="servicesDropdown">
+        <li><a class="dropdown-item" href="service.html">Precision AC</a></li>
+        <li><a class="dropdown-item" href="service.html">HVAC Services</a></li>
+        <li><a class="dropdown-item" href="service.html">HVAC Consultancy and Design</a></li>
+        <li><a class="dropdown-item" href="service.html">HVAC Duct Cleaning</a></li>
+        <li><a class="dropdown-item" href="service.html">HVAC Air Purification</a></li>
+        <li><a class="dropdown-item" href="service.html">Ventilation</a></li>
+        <li><a class="dropdown-item" href="service.html">Air Cooling</a></li>
+        <li><a class="dropdown-item" href="service.html">Centralized AC</a></li>
+        <li><a class="dropdown-item" href="service.html">Chiller Plant Manufacture</a></li>
+        <li><a class="dropdown-item" href="service.html">Cleanroom Services</a></li>
+        <li><a class="dropdown-item" href="service.html">Cold Room Manufacture</a></li>
+        <li><a class="dropdown-item" href="service.html">Ductable and Packaged Air Conditioning</a></li>
+        <li><a class="dropdown-item" href="service.html">UVC Disinfection</a></li>
+        <li><a class="dropdown-item" href="service.html">VRV/VRF</a></li>
+        <li><a class="dropdown-item" href="service.html">Interior & Architecture</a></li>
+    </ul>
+</li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -467,6 +489,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Target the Services dropdown link
+    let servicesDropdown = document.getElementById("servicesDropdown");
+    
+    if (servicesDropdown) {
+        servicesDropdown.addEventListener("click", function(e) {
+            // Check if the screen is desktop size (992px or larger)
+            if (window.innerWidth >= 992) {
+                // Force the browser to act like a normal link and redirect
+                window.location.href = this.href;
+            }
+            // If it's a mobile screen, the script does nothing, 
+            // allowing the standard tap-to-open menu to work!
+        });
+    }
+});
 </script>
 </body>
 
